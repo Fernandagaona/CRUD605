@@ -1,0 +1,84 @@
+package prod12;
+
+public class producto {
+	int id;
+	String descripcion;
+	double precio;
+	int cantidad;
+	String proveedor;
+	
+	DataProducto dp = null;
+
+	
+	public producto() {
+		dp = new DataProducto();
+	}
+	public boolean agregarProducto() {
+		return (true)?true:false;
+	}
+	public boolean eliminarProducto() {
+		return (true)?true:false;
+	}
+	public boolean actualizarProducto() {
+		return (true)?true:false;
+	}
+	public boolean mostrarProducto() {
+		return (true)?true:false;
+	}
+	public boolean borrarProducto() {
+		return (true)?true:false;
+	}
+
+	public producto(int id, String descripcion, double precio, int cantidad, String proveedor) {
+		super();
+		this.id = id;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.cantidad = cantidad;
+		this.proveedor = proveedor;
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+
+	}
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+
+	}
+
+	public String getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(String proveedor) {
+		this.proveedor = proveedor;
+	}
+}

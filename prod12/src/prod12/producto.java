@@ -1,0 +1,105 @@
+package prod12;
+
+public class producto {
+	int id;
+	String descripcion;
+	double precio;
+	int cantidad;
+	String proveedor;
+	DataProducto dp;
+	
+	
+
+	
+	public producto() {
+		dp = new DataProducto();
+	}
+	public boolean agregarProducto() {
+	 if (dp.agregarProducto(this)) {
+		 return true;
+	 }else {
+		 return false; 
+	 }
+	}
+	public boolean eliminarProducto() {
+		if (dp.eliminarProducto(this.getId())) {
+			 return true;
+		 }else {
+			 return false; 
+		 }
+	}
+	public boolean actualizarProducto() {
+		if (dp.actualizarProducto(this)) {
+			 return true;
+		 }else {
+			 return false; 
+		 }
+	}
+	public boolean mostrarProducto() {
+		if (dp.mostrarProducto(this)) {
+			 return true;
+		 }else {
+			 return false; 
+		 }
+	}
+	public boolean borrarProducto() {
+		if (dp.borrarProducto(this)) {
+			 return true;
+		 }else {
+			 return false; 
+		 }
+	}
+
+	public producto(int id, String descripcion, double precio, int cantidad, String proveedor) {
+		super();
+		this.id = id;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.cantidad = cantidad;
+		this.proveedor = proveedor;
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+
+	}
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+
+	}
+
+	public String getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(String proveedor) {
+		this.proveedor = proveedor;
+	}
+}
